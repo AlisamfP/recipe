@@ -15,6 +15,7 @@
 
 html {
     width: 100%;
+    background-color: var(--light-blue);
 }
 
 body {
@@ -22,7 +23,7 @@ body {
     width: 100%;
     max-width: 414px;
     margin: 0 auto;
-    background-color: var(--light-blue);
+    background-color: var(--white);
 }
 
 h1 {
@@ -52,13 +53,34 @@ dt {
     font-weight: 700;
 }
 
+main {
+    position: relative;
+    transform: translate(0, 170px);
+}
+
 menu {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    height: 100px;
+    align-items: center;
+    margin: 0;
 }
 
-#recipeIntro img {
+menu li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--orange);
+    font-weight: bold;
+}
+
+menu li a {
+    text-decoration: none;
+}
+
+.recipeImg {
     width: 100%;
 }
 
@@ -71,15 +93,43 @@ nav ul {
     max-height: 0;
     transition: max-height .2s ease-out;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding-left: 1rem;
+    background-color: var(--white);
 }
 
+
 nav ul li a {
+    color: var(--orange);
     text-decoration: none;
+    display: flex;
+
 }
 
 nav ul li:first-of-type {
     background-color: var(--orange);
     line-height: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 80px;
+    width: 50%;
+}
+
+nav ul li:first-of-type span {
+    display: none;
+}
+
+nav ul li:last-of-type svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    stroke: var(--orange);
 }
 
 nav ul svg, nav ul img {
@@ -94,9 +144,10 @@ nav label {
     user-select: none;
 }
 
-nav input {
+nav input, nav label span {
     display: none;
 }
+
 nav input:checked ~ ul {
     max-height: 500px;
 }
@@ -104,17 +155,44 @@ nav input:checked ~ ul {
 header {
     background-color: var(--white);
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: min-content min-content;
     position: absolute;
     top: 0;
     width: 100%;
+    max-width: 414px;
 }
 
 .search {
     grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+    width: 100%;
+    height: 3em;
+    background-color: var(--white);
 }
 
-@media screen and (min-width:414px) {
+.search input {
+    outline: 3px solid var(--orange);
+    border: none;
+}
+
+.search h3 {
+    display: none;
+}
+
+.search button {
+    outline: 3px solid var(--orange);
+    border: 1px solid var(--orange);
+    background-color: var(--orange);
+}
+
+.search svg {
+    stroke: var(--white);
+}
+
+
+/* @media screen and (min-width:414px) {
     nav ul {
         overflow: visible;
         display: grid;
@@ -130,5 +208,5 @@ header {
     body {
         max-width: 1250px;
     }
-)
+) */
 
