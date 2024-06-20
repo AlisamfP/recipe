@@ -1,0 +1,134 @@
+:root {
+    --black: #0D0D0D;
+    --white: #F2F2F2;
+    --blue: #7ABFBF;
+    --light-blue: rgba(122, 191, 191, .5);
+    --orange: #EB5428;
+    --Bebas: "Bebas Neue", sans-serif;
+    --Montserrat: "Montserrat", sans-serif;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    font-family: var(--Bebas);
+    width: 100%;
+    max-width: 414px;
+    margin: 0 auto;
+    background-color: var(--light-blue);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+nav a, nav span, menu li, footer, #social li {
+    font-size: 20px;
+}
+
+p, dd, li, nav, input {
+    font-family: var(--Montserrat);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+dt {
+    font-family: var(--Montserrat);
+    font-weight: 700;
+}
+
+menu {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#recipeIntro img {
+    width: 100%;
+}
+
+nav h2 {
+    display: none;
+}
+
+nav ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li:first-of-type {
+    background-color: var(--orange);
+    line-height: 0;
+}
+
+nav ul svg, nav ul img {
+    width: 50px;
+}
+
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+nav input {
+    display: none;
+}
+nav input:checked ~ ul {
+    max-height: 500px;
+}
+
+header {
+    background-color: var(--white);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.search {
+    grid-row: 2/3;
+}
+
+@media screen and (min-width:414px) {
+    nav ul {
+        overflow: visible;
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        max-width: 768px;
+    }
+    nav label, nav input {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    body {
+        max-width: 1250px;
+    }
+)
+
