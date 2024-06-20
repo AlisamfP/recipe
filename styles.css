@@ -74,6 +74,7 @@ menu li a {
     align-items: center;
     color: var(--orange);
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 menu li a {
@@ -84,11 +85,16 @@ menu li a {
     width: 100%;
 }
 
+nav {
+    padding: 15px 0;
+}
+
 nav h2 {
     display: none;
 }
 
 nav ul {
+    text-transform: uppercase;
     overflow: hidden;
     max-height: 0;
     transition: max-height .2s ease-out;
@@ -98,16 +104,27 @@ nav ul {
     align-items: flex-start;
     flex-wrap: nowrap;
     margin: 0;
-    padding-left: 1rem;
+    padding-left: 0;
     background-color: var(--white);
 }
 
+nav ul li {
+    width: 100%;
+}
 
 nav ul li a {
     color: var(--orange);
     text-decoration: none;
     display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
 
+nav ul li a:hover {
+    background-color: var(--orange);
+    color: var(--white);
 }
 
 nav ul li:first-of-type {
@@ -121,14 +138,30 @@ nav ul li:first-of-type {
     width: 50%;
 }
 
-nav ul li:first-of-type span {
-    display: none;
+nav ul li:first-of-type svg {
+    margin: 0 auto;
 }
 
-nav ul li:last-of-type svg {
+nav ul li:first-of-type span {
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+}
+
+nav ul li:last-of-type a {
+    width: 20%;
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--black);
+    white-space: nowrap;
+    font-size: 1em;
+}
+
+nav ul li:last-of-type svg {
     stroke: var(--orange);
 }
 
@@ -138,14 +171,22 @@ nav ul svg, nav ul img {
 
 nav label {
     cursor: pointer;
-    display: inline-block;
-    padding: 28px 20px;
+    display: flex;
+    flex-direction: column;
     position: relative;
     user-select: none;
+    width: 30%;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-nav input, nav label span {
+nav input {
     display: none;
+}
+
+nav label span {
+    color: var(--black);
 }
 
 nav input:checked ~ ul {
