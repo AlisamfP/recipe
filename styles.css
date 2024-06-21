@@ -91,7 +91,7 @@ menu li a {
 }
 
 article p {
-    padding: 0.5em;
+    padding: 0 0.5em;
 }
 
 dl {
@@ -107,6 +107,49 @@ dl {
 
 .ingredients li {
     padding: 0.5em;
+}
+
+.directions li {
+    padding: 0.5em;
+}
+
+aside {
+    background-color: var(--blue);
+}
+
+.side-dishes h2 {
+    text-align: center;
+}
+
+.side-dishes article {
+    gap: 0 10px;
+    padding: 0.5em 0;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 1fr min-content min-content min-content;
+    grid-template-areas: 
+        "img title"
+        "img info"
+        "img rating"
+        "img stars";
+}
+
+.side-dishes h3 {
+    margin: 0;
+}
+
+.side-dishes article img {
+    grid-area: img;
+    width: 100px;
+    padding: 10px;
+}
+
+.side-dishes article svg {
+    grid-area: stars;
+}
+
+.side-dishes article p {
+    margin: 0;
 }
 
 
