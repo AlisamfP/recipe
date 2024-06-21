@@ -27,6 +27,7 @@ body {
 }
 
 h1 {
+    text-align: center;
     font-size: 40px;
 }
 
@@ -85,6 +86,31 @@ menu li a {
     width: 100%;
 }
 
+ article section h2 {
+    text-align: center;
+}
+
+article p {
+    padding: 0.5em;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 12px 0;
+    padding: 0 0.5em;
+}
+
+.ingredients ul {
+    list-style-type: square;
+}
+
+.ingredients li {
+    padding: 0.5em;
+}
+
+
+/* Navigation */
 nav {
     padding: 15px 0;
 }
@@ -203,6 +229,7 @@ header {
     max-width: 414px;
 }
 
+/* Search Bar */
 .search {
     grid-row: 2/3;
     display: flex;
