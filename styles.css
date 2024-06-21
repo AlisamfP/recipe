@@ -64,12 +64,13 @@ menu {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 0;
-    height: 100px;
+    height: 75px;
     align-items: center;
-    margin: 0;
+    margin: 0 0 0 -12px;
 }
 
 menu li a {
+    font-family: var(--Bebas);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -145,6 +146,7 @@ aside {
 }
 
 .side-dishes article svg {
+    margin: 0 3px;
     grid-area: stars;
 }
 
@@ -152,10 +154,18 @@ aside {
     margin: 0;
 }
 
+.rating {
+    font-weight: bold;
+}
+
+.star-filled {
+    fill: var(--orange);
+}
+
 
 /* Navigation */
 nav {
-    padding: 15px 0;
+    box-shadow: 0px 4px 6px -3px var(--black);
 }
 
 nav h2 {
@@ -196,15 +206,16 @@ nav ul li a:hover {
     color: var(--white);
 }
 
-nav ul li:first-of-type {
+nav ul li:first-of-type a {
     background-color: var(--orange);
     line-height: 0;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    height: 80px;
+    height: 100px;
     width: 50%;
+    font-size: 1em;
 }
 
 nav ul li:first-of-type svg {
@@ -218,7 +229,6 @@ nav ul li:first-of-type span {
 }
 
 nav ul li:last-of-type a {
-    width: 20%;
     position: absolute;
     top: 0;
     right: 0;
@@ -228,10 +238,19 @@ nav ul li:last-of-type a {
     color: var(--black);
     white-space: nowrap;
     font-size: 1em;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+}
+
+nav ul li:last-of-type a:hover {
+    background-color: var(--white);
 }
 
 nav ul li:last-of-type svg {
     stroke: var(--orange);
+    width: 50px;
+    height: 50px;
 }
 
 nav ul svg, nav ul img {
@@ -244,8 +263,10 @@ nav label {
     flex-direction: column;
     position: relative;
     user-select: none;
-    width: 30%;
+    height: 100px;
+    width: 100px;
     align-items: center;
+    justify-content: center;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -260,6 +281,7 @@ nav label span {
 
 nav input:checked ~ ul {
     max-height: 500px;
+    box-shadow: 0px -4px 6px -3px var(--black);
 }
 
 header {
@@ -301,6 +323,8 @@ header {
 .search svg {
     stroke: var(--white);
 }
+
+
 
 
 /* @media screen and (min-width:414px) {
