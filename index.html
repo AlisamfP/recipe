@@ -7,17 +7,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="styles.css">
     <title>Good Eats - Street Tacos</title>
   </head>
+
   <body>
     <main>
       <article>
         <h1>Street Tacos</h1>
-        <menu>
+        <menu role="menubar">
           <li>
-            <a href="#">
+            <a href="#" title="Save">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-download"
@@ -30,16 +32,16 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
-                <polyline points="7 11 12 16 17 11" />
-                <line x1="12" y1="4" x2="12" y2="16" />
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
+                <polyline points="7 11 12 16 17 11"></polyline>
+                <line x1="12" y1="4" x2="12" y2="16"></line>
               </svg>
               Save
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" title="Share">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-share"
@@ -52,18 +54,18 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <circle cx="6" cy="12" r="3" />
-                <circle cx="18" cy="6" r="3" />
-                <circle cx="18" cy="18" r="3" />
-                <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
-                <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="6" cy="12" r="3"></circle>
+                <circle cx="18" cy="6" r="3"></circle>
+                <circle cx="18" cy="18" r="3"></circle>
+                <line x1="8.7" y1="10.7" x2="15.3" y2="7.3"></line>
+                <line x1="8.7" y1="13.3" x2="15.3" y2="16.7"></line>
               </svg>
               Share
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" title="Print">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-printer"
@@ -76,18 +78,18 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path
                   d="M17 17h2a2 2 0 0 0 2 -2v-4a2 2 0 0 0 -2 -2h-14a2 2 0 0 0 -2 2v4a2 2 0 0 0 2 2h2"
-                />
-                <path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4" />
-                <rect x="7" y="13" width="10" height="8" rx="2" />
+                ></path>
+                <path d="M17 9v-4a2 2 0 0 0 -2 -2h-6a2 2 0 0 0 -2 2v4"></path>
+                <rect x="7" y="13" width="10" height="8" rx="2"></rect>
               </svg>
               Print
             </a>
           </li>
           <li>
-            <a href="#recipe">
+            <a href="#recipe" title="Jump to recipe">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-file-symlink"
@@ -100,19 +102,19 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 21v-4a3 3 0 0 1 3 -3h5" />
-                <path d="M9 17l3 -3l-3 -3" />
-                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 21v-4a3 3 0 0 1 3 -3h5"></path>
+                <path d="M9 17l3 -3l-3 -3"></path>
+                <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
                 <path
                   d="M5 11v-6a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-9.5"
-                />
+                ></path>
               </svg>
-              Jump to Recipe
+              Jump to recipe
             </a>
           </li>
         </menu>
-        <img class="recipeImg" src="images/street-tacos.png" alt="">
+        <img class="recipeImg" src="images/street-tacos.png" alt="two open faced street tacos presented on a plate">
         <p>
           Street tacos are delicious, amazing, and oh so mouthwatering! Bite
           into tender steak, zesty lime flavor with a hint of spice and add on
@@ -130,16 +132,12 @@
           <dl>
             <dt>Prep Time</dt>
             <dd>10 minutes</dd>
-
             <dt>Cook Time</dt>
             <dd>10 minutes</dd>
-
             <dt>Total Time</dt>
             <dd>20 minutes</dd>
-
             <dt>Author</dt>
             <dd>Taco Cheesington</dd>
-
             <dt>Servings</dt>
             <dd>6 tacos</dd>
           </dl>
@@ -188,11 +186,79 @@
         <h2>Need some side dishes?</h2>
         <article id="mexican-rice-recipe">
           <h3>Mexican Rice</h3>
-          <img src="images/mexican-rice.png" alt="">
+          <img src="images/mexican-rice.png" alt="a white bowl filled with mexican rice and a lime">
           <p>Traditional recipe with a twist.</p>
           <p class="rating">Rating:</p>
           <div class="star-ratings">
-            <svg class="star-filled"
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+              ></path>
+            </svg>
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+              ></path>
+            </svg>
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+              ></path>
+            </svg>
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+              ></path>
+            </svg>
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-star"
               width="20"
@@ -204,90 +270,22 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
                 d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
-            </svg>
-            <svg class="star-filled"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
-            </svg>
-            <svg class="star-filled"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
-            </svg>
-            <svg class="star-filled"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
-            </svg>
-            <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
+              ></path>
             </svg>
           </div>
         </article>
         <article id="salsa-recipe">
           <h3>Salsa</h3>
-          <img src="images/salsa.png" alt="">
+          <img src="images/salsa.png" alt="a cutting board with various ingredients, taquitos, tortilla chips and a cup of salsa">
           <p>Just the right amount of spice.</p>
           <p class="rating">Rating:</p>
           <div class="star-ratings">
-            <svg class="star-filled"
+            <svg
+              class="star-filled"
               xmlns="http://www.w3.org/2000/svg"
-              class="icon icon-tabler icon-tabler-star"
               width="20"
               height="20"
               viewBox="0 0 24 24"
@@ -297,78 +295,78 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
                 d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
+              ></path>
             </svg>
-            <svg class="star-filled"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
                 d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
+              ></path>
             </svg>
-            <svg class="star-filled"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
                 d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
+              ></path>
             </svg>
-            <svg class="star-filled"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
                 d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
+              ></path>
             </svg>
-            <svg class="star-filled"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
                 d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
+              ></path>
             </svg>
           </div>
         </article>
@@ -378,7 +376,75 @@
           <p>Fresh and healthy.</p>
           <p class="rating">Rating:</p>
           <div class="star-ratings">
-            <svg class="star-filled"
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+              ></path>
+            </svg>
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+              ></path>
+            </svg>
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+              ></path>
+            </svg>
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+              ></path>
+            </svg>
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-star"
               width="20"
@@ -390,78 +456,10 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
                 d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
-            </svg>
-            <svg class="star-filled"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
-            </svg>
-            <svg class="star-filled"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
-            </svg>
-            <svg class="star-filled"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
-            </svg>
-            <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
+              ></path>
             </svg>
           </div>
         </article>
@@ -471,7 +469,75 @@
           <p>Easy to make and so good.</p>
           <p class="rating">Rating:</p>
           <div class="star-ratings">
-            <svg class="star-filled"
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+              ></path>
+            </svg>
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+              ></path>
+            </svg>
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+              ></path>
+            </svg>
+            <svg
+              class="star-filled"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="#ffffff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+              ></path>
+            </svg>
+            <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-star"
               width="20"
@@ -483,85 +549,17 @@
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
               <path
                 d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
-            </svg>
-            <svg class="star-filled"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
-            </svg>
-            <svg class="star-filled"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
-            </svg>
-            <svg class="star-filled"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
-            </svg>
-            <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-star"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="#ffffff"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path
-                d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
-              />
+              ></path>
             </svg>
           </div>
         </article>
       </aside>
     </main>
     <header>
-      <nav>
+      <nav class="main-navigation">
         <h2 class="visibly-hidden">Main Navigation</h2>
         <input type="checkbox" id="dropdown">
         <label for="dropdown">
@@ -580,7 +578,7 @@
                 stroke-width: 2;
                 stroke-miterlimit: 10;
               "
-            />
+            ></path>
             <path
               d="M36.1 22.6c0 .5-.1 1-.5 1.4-.5.7-1.4 1.2-2.6 1.3-2.8.2-5.8.1-8.6.1h-12c-1.3 0-2.6 0-3.8-.1-1.1 0-2.4 0-3.3-.6-.8-.6-1.2-1.4-1.2-2.2 0-.9.3-1.8 1.5-2.3.9-.4 2-.5 3.1-.5 1.4 0 2.8-.1 4.3-.1h14.5c1.2 0 2.3 0 3.5.1 1.7.1 3.3-.1 4.4 1 .3.6.7 1.3.7 1.9z"
               style="
@@ -589,7 +587,7 @@
                 stroke-width: 2.0832;
                 stroke-miterlimit: 10;
               "
-            />
+            ></path>
             <path
               d="M38.5 22.6c0 .9-.2 1.7-.5 2.5-.6 1.3-1.7 2.1-3 2.2-3.3.3-6.7.2-9.9.2H11.2c-1.5 0-3-.1-4.4-.1-1.3-.1-2.8 0-3.8-1-.9-1-1.3-2.5-1.3-3.8 0-1.6.3-3.1 1.7-4 1-.7 2.3-.8 3.5-.8 1.6-.1 3.3-.1 4.9-.1H28.5c1.3 0 2.7 0 4 .1 2 .1 3.8-.1 5.1 1.7.5.9.9 2 .9 3.1z"
               style="
@@ -598,13 +596,13 @@
                 stroke-width: 2.9408;
                 stroke-miterlimit: 10;
               "
-            />
+            ></path>
           </svg>
           <span>menu</span>
         </label>
         <ul>
-          <li>
-            <a href="#">
+          <li class="home-btn">
+            <a href="#" title="home">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-tools-kitchen"
@@ -617,60 +615,60 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 3h8l-1 9h-6z" />
-                <path d="M7 18h2v3h-2z" />
-                <path d="M20 3v12h-5c-.023 -3.681 .184 -7.406 5 -12z" />
-                <path d="M20 15v6h-1v-3" />
-                <line x1="8" y1="12" x2="8" y2="18" />
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 3h8l-1 9h-6z"></path>
+                <path d="M7 18h2v3h-2z"></path>
+                <path d="M20 3v12h-5c-.023 -3.681 .184 -7.406 5 -12z"></path>
+                <path d="M20 15v6h-1v-3"></path>
+                <line x1="8" y1="12" x2="8" y2="18"></line>
               </svg>
               <span>Home</span>
             </a>
           </li>
-          <li>
-            <a href="#">
-              <img src="images/breakfast.png" alt="">
+          <li class="breakfast">
+            <a href="#" title="breakfast">
+              <img src="images/breakfast.png" alt="two eggs over easy being transferred from a pan to a plate">
               Breakfast
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" title="brunch">
               <img src="images/brunch.png" alt="">
               Brunch
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" title="lunch">
               <img src="images/lunch.png" alt="">
               Lunch
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" title="dinner">
               <img src="images/dinner.png" alt="">
               Dinner
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" title="appetizers">
               <img src="images/appetizers.png" alt="">
               Appetizers
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" title="desserts">
               <img src="images/desserts.png" alt="">
               Desserts
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" title="beverages">
               <img src="images/beverages.png" alt="">
               Beverages
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="user-icon">
+            <a href="#" title="Sign In/Up">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-user-circle"
@@ -683,19 +681,19 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <circle cx="12" cy="12" r="9" />
-                <circle cx="12" cy="10" r="3" />
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="12" cy="12" r="9"></circle>
+                <circle cx="12" cy="10" r="3"></circle>
                 <path
                   d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"
-                />
+                ></path>
               </svg>
               Sign In/Up
             </a>
           </li>
         </ul>
       </nav>
-      <section class="search">
+      <section class="search" role="search">
         <h3 class="visibly-hidden">Search</h3>
         <input
           type="search"
@@ -703,7 +701,7 @@
           name="q"
           placeholder="Find a recipe"
         >
-        <button>
+        <button class="search-btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-search"
@@ -716,9 +714,9 @@
             stroke-linecap="round"
             stroke-linejoin="round"
           >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <circle cx="10" cy="10" r="7" />
-            <line x1="21" y1="21" x2="15" y2="15" />
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
           </svg>
         </button>
       </section>
@@ -729,7 +727,7 @@
         <h3 class="visibly-hidden">Social Media Links</h3>
         <ul>
           <li>
-            <a href="#">
+            <a href="#" title="Facebook">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-facebook"
@@ -742,16 +740,16 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <path
                   d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
-                />
+                ></path>
               </svg>
               Facebook
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" title="Instagram">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-instagram"
@@ -764,16 +762,16 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <rect x="4" y="4" width="16" height="16" rx="4" />
-                <circle cx="12" cy="12" r="3" />
-                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+                <circle cx="12" cy="12" r="3"></circle>
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
               </svg>
               Instagram
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" title="YouTube">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-youtube"
@@ -786,15 +784,15 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <rect x="3" y="5" width="18" height="14" rx="4" />
-                <path d="M10 9l5 3l-5 3z" />
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <rect x="3" y="5" width="18" height="14" rx="4"></rect>
+                <path d="M10 9l5 3l-5 3z"></path>
               </svg>
               YouTube
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" title="Tik Tok">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-tiktok"
@@ -807,15 +805,15 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5"></path>
               </svg>
               Tik Tok
             </a>
           </li>
         </ul>
       </section>
-      <section class="author-info">
+      <section class="author-info" role="contentinfo">
         <h3 class="visibly-hidden">Good Eats</h3>
         <div class="copyright">
           <p>Copyright 2022</p>
