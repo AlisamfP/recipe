@@ -108,7 +108,7 @@ article section h2 {
   text-align: center;
 }
 
-.recipe-section {
+#recipe-section {
   display: grid;
   grid-template-columns: 1fr;
 }
@@ -124,19 +124,19 @@ dl {
   padding: 0 0.5em;
 }
 
-.ingredients ul {
+#ingredients ul {
   list-style-type: square;
 }
 
-.ingredients li {
+#ingredients li {
   padding: 0.5em;
 }
 
-.directions li {
+#directions li {
   padding: 0.5em;
 }
 
-.side-dishes {
+#side-dishes {
   background-color: var(--blue);
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -164,13 +164,13 @@ dl {
   grid-area: tortilla;
 }
 
-.side-dishes h2 {
+#side-dishes h2 {
   grid-area: header;
   text-align: center;
   margin: 0.5em;
 }
 
-.side-dishes article {
+#side-dishes article {
   gap: 0 10px;
   padding: 0.5em 0;
   display: grid;
@@ -183,22 +183,22 @@ dl {
     "img stars";
 }
 
-.side-dishes h3 {
+#side-dishes h3 {
   margin: 0;
 }
 
-.side-dishes article img {
+#side-dishes article img {
   grid-area: img;
   width: 100px;
   padding: 10px;
 }
 
-.side-dishes article svg {
+#side-dishes article svg {
   margin: 0 3px;
   grid-area: stars;
 }
 
-.side-dishes article p {
+#side-dishes article p {
   margin: 0;
 }
 
@@ -244,6 +244,7 @@ nav ul li a {
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px;
+  gap: 10px;
 }
 
 nav ul li a:hover {
@@ -261,6 +262,11 @@ nav ul li a:hover {
   height: 100px;
   width: 50%;
   font-size: 1em;
+}
+
+.home-btn a:hover {
+  background-color: var(--blue);
+  border: none;
 }
 
 .home-btn svg {
@@ -290,6 +296,7 @@ nav ul li a:hover {
 
 .user-icon a:hover {
   background-color: var(--off-white);
+  color: var(--blue);
 }
 
 .user-icon svg {
@@ -340,7 +347,7 @@ header {
 }
 
 /* Search Bar */
-.search {
+#search-bar {
   grid-row: 2/3;
   display: flex;
   justify-content: center;
@@ -350,7 +357,7 @@ header {
   background-color: var(--off-white);
 }
 
-.search input {
+#search-bar input {
   outline: 3px solid var(--orange);
   border: none;
 }
@@ -361,7 +368,7 @@ header {
   background-color: var(--orange);
 }
 
-.search svg {
+#search-bar svg {
   stroke: var(--off-white);
 }
 
@@ -369,6 +376,7 @@ footer {
   background-color: var(--pure-white);
   display: grid;
   grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
 }
 
 #social ul {
@@ -388,13 +396,19 @@ footer {
   color: var(--orange);
   justify-items: center;
   font-family: var(--Bebas);
+  gap: 10px;
+}
+
+#social li a:hover {
+  margin: -1px;
+  border-bottom: 3px solid var(--orange);
 }
 
 footer img {
   width: 50%;
 }
 
-.author-info {
+#author-info {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -441,7 +455,7 @@ footer img {
     margin-top: -91px;
   }
 
-  .recipe-section {
+  #recipe-section {
     grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
     grid-template-areas:
       "header header"
@@ -449,12 +463,12 @@ footer img {
       "article article";
   }
 
-  .details {
+  #details {
     grid-column: 1/-1;
     margin: 0 auto;
   }
 
-  .side-dishes {
+  #side-dishes {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     grid-template-areas:
       "header header"
@@ -471,6 +485,7 @@ footer img {
   }
 
   nav {
+    height: 100px;
     grid-row: 2/3;
     grid-column: 1/-1;
   }
@@ -498,21 +513,15 @@ footer img {
     height: 5em;
   }
 
-  .home-btn a:hover {
-    background-color: var(--orange);
-    box-shadow: 0px 1px 4px 1px var(--black);
-  }
-
   .user-icon a {
     justify-content: flex-start;
   }
 
   .user-icon a:hover {
     color: unset;
-    height: unset;
   }
 
-  .search {
+  #search-bar {
     grid-column: 2/3;
     grid-row: 1/2;
     height: 3.5em;
@@ -533,13 +542,13 @@ footer img {
     display: none;
   }
 
-  .search {
+  #search-bar {
     background-color: var(--pure-white);
     justify-content: flex-end;
   }
 
   footer {
-    padding: 1.5em 1em 0 1em;
+    padding: 1.5em;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 
@@ -547,7 +556,7 @@ footer img {
     grid-column: 2/3;
   }
 
-  .author-info {
+  #author-info {
     grid-row: 1/2;
     grid-column: 1/2;
   }
@@ -586,42 +595,43 @@ footer img {
 		margin: 0;
 	}
 
-  .details {
+  #details {
     width: 100%;
     background-color: var(--black);
     color: var(--blue);
   }
 
-  .details dl {
+  #details dl {
     grid-template-columns: repeat(5, 1fr);
     width: 100%;
     justify-items: center;
   }
 
-  .details dd {
+  #details dd {
     margin: 0;
     grid-row: 2/3;
   }
 
-  .side-dishes {
+  #side-dishes {
+    padding: 10px;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-areas: 
       "header header header header"
       "rice salsa guac tortilla";
   }
 
-  .side-dishes article {
+  #side-dishes article {
     gap: 1em;
     grid-template-columns: minmax(0, min-content) minmax(0, 1fr);
   }
 
-  .side-dishes h3, 
+  #side-dishes h3, 
   .side-dish-info {
     margin: 10px;
     grid-column: 1/-1;
   }
 
-  .side-dishes article img {
+  #side-dishes article img {
     grid-column: 1/-1;
     width: 100%;
   }
@@ -651,18 +661,33 @@ footer img {
     flex-direction: row;
 		align-items: center;
   }
+
+  nav ul li a:hover {
+    margin: -1px;
+  }
+
   .home-btn a {
 		margin-right: calc(100% - 50px);
     position: static;
+    height: 6.2em;
+    justify-content: center;
 	}
+
+  .home-btn a:hover {
+    background-color: var(--blue);
+    box-shadow: none;
+    border: none;
+    margin: 0;
+  }
 	
 	.user-icon a {
-		margin-left: calc(50% - 50px);
     position: static;
 		height: unset;
+    width: unset;
+    font-size: 20px;
   }
 
-  .search {
+  #search-bar {
 		grid-column: 1/-1;
     grid-row: 2/3;
 		background-color: var(--off-white);
@@ -675,12 +700,16 @@ footer img {
 		margin-right: calc(50% - 100px);
 	}
 
-	.search input,
+	#search-bar input,
 	.search-btn {
 		height: 50%;
 	}
 
-  .author-info {
+  footer {
+    justify-items: stretch;
+  }
+
+  #author-info {
     flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: flex-end;
