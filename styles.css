@@ -563,25 +563,45 @@ footer img {
 	}
 
 	.recipe-intro {
-		height: 500px;
 		display: grid;
-		grid-template-rows: minmax(0, 2fr) minmax(0, 1fr);
+    grid-template-columns: auto 1fr minmax(min-content, 1fr);
+		grid-template-rows: minmax(0, min-content) minmax(0, 1fr);
 		grid-template-areas: 
 			"menu image text"
 			"menu image text";
 	}
 
 	menu {
+    border: 3px solid var(--orange);
 		height: 100%;
 		grid-area: menu;
 		grid-template-rows: repeat(4, 1fr);
 		grid-template-columns: 1fr;
+    margin: 0;
+    padding: 10px;
 	}
 
 	.recipeImg {
 		grid-area: image;
 		margin: 0;
 	}
+
+  .details {
+    width: 100%;
+    background-color: var(--black);
+    color: var(--blue);
+  }
+
+  .details dl {
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    justify-items: center;
+  }
+
+  .details dd {
+    margin: 0;
+    grid-row: 2/3;
+  }
 
 	header {
 		align-items: center;
