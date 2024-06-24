@@ -603,6 +603,34 @@ footer img {
     grid-row: 2/3;
   }
 
+  .side-dishes {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas: 
+      "header header header header"
+      "rice salsa guac tortilla";
+  }
+
+  .side-dishes article {
+    gap: 1em;
+    grid-template-columns: minmax(0, min-content) minmax(0, 1fr);
+  }
+
+  .side-dishes h3, 
+  .side-dish-info {
+    margin: 10px;
+    grid-column: 1/-1;
+  }
+
+  .side-dishes article img {
+    grid-column: 1/-1;
+    width: 100%;
+  }
+
+  .star-ratings {
+    white-space: nowrap;
+    margin-left: -1em;
+  }
+
 	header {
 		align-items: center;
 		max-width: 1250px;
@@ -651,4 +679,10 @@ footer img {
 	.search-btn {
 		height: 50%;
 	}
+
+  .author-info {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
 }
