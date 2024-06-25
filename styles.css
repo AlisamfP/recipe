@@ -584,11 +584,15 @@ footer img {
     border: 3px solid var(--orange);
 		height: 100%;
 		grid-area: menu;
-		grid-template-rows: repeat(4, 1fr);
+		grid-template-rows: repeat(4, 110px);
 		grid-template-columns: 1fr;
     margin: 0;
     padding: 10px;
 	}
+
+  menu li a {
+    width: 110px;
+  }
 
 	.recipeImg {
 		grid-area: image;
@@ -651,7 +655,7 @@ footer img {
   nav {
 		grid-column: 1/-1;
     grid-row: 1/2;
-		box-shadow: 0px 4px 6px -3px var(--black);
+    z-index: 3;
   }
   nav ul {
 		background-color: var(--pure-white);
@@ -666,10 +670,18 @@ footer img {
     margin: -1px;
   }
 
+  .home-btn {
+    padding-right: 10%;
+  }
+
+  .user-icon {
+    padding-left: 10%;
+  }
+
   .home-btn a {
 		margin-right: calc(100% - 50px);
     position: static;
-    height: 6.2em;
+    height: 6.3em;
     justify-content: center;
 	}
 
