@@ -16,6 +16,7 @@
 }
 
 body {
+  width: 100%;
   display: grid;
 	grid-template-rows: minmax(0, min-content) minmax(0, 1fr) minmax(0,min-content);
 	font-family: var(--Bebas);
@@ -86,7 +87,6 @@ menu {
   color: var(--orange);
   font-weight: bold;
   text-decoration: none;
-  min-width: 100px;
 }
 
 .menu-item a:hover {
@@ -181,7 +181,7 @@ menu {
 
 .side-dish img {
   grid-area: img;
-  width: 125px;
+  width: 100px;
   padding: 10px;
 }
 
@@ -383,6 +383,7 @@ footer {
 
 #social li {
   list-style-type: none;
+  white-space: nowrap;
 }
 
 #social li a {
@@ -504,6 +505,11 @@ footer img {
     height: 5em;
   }
 
+  .home-btn a:hover {
+    background-color: var(--light-blue);
+    border: none;
+  }
+
   .user-icon a {
     justify-content: flex-start;
   }
@@ -579,6 +585,7 @@ footer img {
 		grid-template-columns: 1fr;
     margin: 0;
     padding: 10px;
+    align-items: start;
 	}
 
   .menu-item a {
@@ -652,6 +659,7 @@ footer img {
     grid-row: 1/2;
     z-index: 3;
   }
+
   .navigation-list {
 		background-color: var(--pure-white);
 		max-height: 100px;
@@ -660,15 +668,13 @@ footer img {
     flex-direction: row;
 		align-items: center;
   }
-
-  .home-btn {
-    padding-right: 10%;
+  .nav-item {
+    width: 100px;
   }
-
+  .home-btn, 
   .user-icon {
-    padding-left: 10%;
+    flex-grow: 2;
   }
-
   .home-btn a {
     position: static;
     height: 6.3em;
@@ -685,8 +691,7 @@ footer img {
 	.user-icon a {
     position: static;
 		height: unset;
-    width: unset;
-    font-size: 20px;
+    margin-left: auto;
   }
 
   #search-bar {
