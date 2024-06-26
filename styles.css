@@ -122,7 +122,7 @@ menu {
   list-style-type: square;
 }
 
-#ingredients li {
+.ingredients-list li {
   padding: 0.5em;
 }
 
@@ -720,5 +720,72 @@ footer img {
     flex-direction: row-reverse;
     align-items: flex-start;
     justify-content: flex-end;
+  }
+}
+
+@media print {
+  *{
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    background-color: var(--pure-white) !important;
+    color: var(--black) !important;
+  }
+  body {
+    max-width: 100%;
+  }
+  header,
+  menu,
+  #side-dishes-section,
+  .recipeImg,
+  #author-info img {
+    display: none;
+  }
+  .article-title,
+  .section-header {
+    text-align: left;
+    margin: 0;
+  }
+  #recipe-section {
+    grid-template-columns: min-content 1fr;
+    gap: 0 0.25in;
+  }
+  #details {
+    grid-column: 1/-1;
+  }
+  .ingredients-list,
+  .details-list {
+    padding: 0 0.5in;
+  }
+  .ingredients-list li {
+    padding: 0;
+  }
+  img {
+    filter: grayscale(1);
+  }
+  #social ul {
+    display: block;
+    columns: 4;
+  }
+  #social li a {
+    display: flex;
+    align-items: center;
+  }
+  #social svg {
+    stroke: var(--black);
+  }
+
+  a[href]::after {
+    content: " " attr(href) "";
+  }
+  #social {
+    width: 100%;
+  }
+  #social li,
+  .copyright p {
+    font-size: 12px;
+  }
+
+  @page {
+    margin: 0.5in;
+    /* size: A4 portrait; */
   }
 }
