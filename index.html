@@ -14,12 +14,12 @@
   </head>
   <body>
     <main>
-      <article>
-        <h1>Street Tacos</h1>
+      <article class="main-article">
+        <h1 class="article-title">Street Tacos</h1>
         <div class="recipe-intro">
           <menu role="menubar">
-            <li>
-              <a href="#" title="Save">
+            <li class="menu-item">
+              <a href="#save" title="Save">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="icon icon-tabler icon-tabler-download"
@@ -40,8 +40,8 @@
                 Save
               </a>
             </li>
-            <li>
-              <a href="#" title="Share">
+            <li class="menu-item">
+              <a href="#share" title="Share">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="icon icon-tabler icon-tabler-share"
@@ -64,8 +64,8 @@
                 Share
               </a>
             </li>
-            <li>
-              <a href="#" title="Print">
+            <li class="menu-item">
+              <a href="#print" title="Print">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="icon icon-tabler icon-tabler-printer"
@@ -88,7 +88,7 @@
                 Print
               </a>
             </li>
-            <li>
+            <li class="menu-item">
               <a href="#recipe-section" title="Jump to recipe">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -130,8 +130,8 @@
         </div>
         <div id="recipe-section">
           <section id="details">
-            <h2>Details</h2>
-            <dl>
+            <h2 class="section-header">Details</h2>
+            <dl class="details-list">
               <dt>Prep Time</dt>
               <dd>10 minutes</dd>
               <dt>Cook Time</dt>
@@ -145,8 +145,8 @@
             </dl>
           </section>
           <section id="ingredients">
-            <h2>Ingredients</h2>
-            <ul>
+            <h2 class="section-header">Ingredients</h2>
+            <ul class="ingredients-list">
               <li>Flank steak</li>
               <li>Soy Sauce</li>
               <li>Worcestershire sauce</li>
@@ -161,7 +161,7 @@
             </ul>
           </section>
           <section id="directions">
-            <h2>Directions</h2>
+            <h2 class="section-header">Directions</h2>
             <ol>
               <li>
                 Cut and mix: Cut the flank steak into one inch pieces. In a medium
@@ -185,9 +185,9 @@
           </section>
         </div>
       </article>
-      <aside id="side-dishes">
-        <h2>Need some side dishes?</h2>
-        <article id="mexican-rice">
+      <aside id="side-dishes-section">
+        <h2 class="section-header">Need some side dishes?</h2>
+        <article class="side-dish" id="mexican-rice">
           <h3>Mexican Rice</h3>
           <img src="images/mexican-rice.png" alt="a white bowl filled with mexican rice and a lime">
           <p class="side-dish-info">Traditional recipe with a twist.</p>
@@ -280,7 +280,7 @@
             </svg>
           </div>
         </article>
-        <article id="salsa">
+        <article class="side-dish" id="salsa">
           <h3>Salsa</h3>
           <img src="images/salsa.png" alt="a cutting board with various ingredients, taquitos, tortilla chips and a cup of salsa">
           <p class="side-dish-info">Just the right amount of spice.</p>
@@ -373,9 +373,9 @@
             </svg>
           </div>
         </article>
-        <article id="guacamole">
+        <article class="side-dish" id="guacamole">
           <h3>Guacamole</h3>
-          <img src="images/guacamole.png" alt="">
+          <img src="images/guacamole.png" alt="a bowl of guacamole surrounded by tortilla chips and tomatoes">
           <p class="side-dish-info">Fresh and healthy.</p>
           <p class="rating">Rating:</p>
           <div class="star-ratings">
@@ -466,9 +466,9 @@
             </svg>
           </div>
         </article>
-        <article id="tortillas">
+        <article class="side-dish" id="tortillas">
           <h3>Tortilla</h3>
-          <img src="images/tortillas.png" alt="">
+          <img src="images/tortillas.png" alt="a stack of tortillas sitting on top of a blue and white striped towel">
           <p class="side-dish-info">Easy to make and so good.</p>
           <p class="rating">Rating:</p>
           <div class="star-ratings">
@@ -603,8 +603,8 @@
           </svg>
           <span>menu</span>
         </label>
-        <ul>
-          <li class="home-btn">
+        <ul class="navigation-list">
+          <li class="nav-item home-btn">
             <a href="#" title="home">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -628,50 +628,50 @@
               <span>Home</span>
             </a>
           </li>
-          <li class="breakfast">
-            <a href="#" title="breakfast">
+          <li class="nav-item">
+            <a href="#breakfast" title="breakfast">
               <img src="images/breakfast.png" alt="two eggs over easy being transferred from a pan to a plate">
               Breakfast
             </a>
           </li>
-          <li>
-            <a href="#" title="brunch">
-              <img src="images/brunch.png" alt="">
+          <li class="nav-item">
+            <a href="#brunch" title="brunch">
+              <img src="images/brunch.png" alt="a top down view of a group of people cheersing their drinks">
               Brunch
             </a>
           </li>
-          <li>
-            <a href="#" title="lunch">
-              <img src="images/lunch.png" alt="">
+          <li class="nav-item">
+            <a href="#lunch" title="lunch">
+              <img src="images/lunch.png" alt="a sandwhich with meat, eggs, and avocado on a plate">
               Lunch
             </a>
           </li>
-          <li>
-            <a href="#" title="dinner">
-              <img src="images/dinner.png" alt="">
+          <li class="nav-item">
+            <a href="#dinner" title="dinner">
+              <img src="images/dinner.png" alt="a white plate topped with meat and veggies">
               Dinner
             </a>
           </li>
-          <li>
-            <a href="#" title="appetizers">
-              <img src="images/appetizers.png" alt="">
+          <li class="nav-item">
+            <a href="#appetizers" title="appetizers">
+              <img src="images/appetizers.png" alt="a wooden cutting board topped with cheese, crackers, honey, and grapes">
               Appetizers
             </a>
           </li>
-          <li>
-            <a href="#" title="desserts">
-              <img src="images/desserts.png" alt="">
+          <li class="nav-item">
+            <a href="#desserts" title="desserts">
+              <img src="images/desserts.png" alt="a couple of tarts with various berries on top">
               Desserts
             </a>
           </li>
-          <li>
-            <a href="#" title="beverages">
-              <img src="images/beverages.png" alt="">
+          <li class="nav-item">
+            <a href="#beverages" title="beverages">
+              <img src="images/beverages.png" alt="a close up of an orange drink in a wine glass">
               Beverages
             </a>
           </li>
-          <li class="user-icon">
-            <a href="#" title="Sign In/Up">
+          <li class="nav-item user-icon">
+            <a href="#signin" title="Sign In/Up">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-user-circle"
@@ -730,7 +730,7 @@
         <h3 class="visibly-hidden">Social Media Links</h3>
         <ul>
           <li>
-            <a href="#" title="Facebook">
+            <a href="#facebook" title="Facebook">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-facebook"
@@ -752,7 +752,7 @@
             </a>
           </li>
           <li>
-            <a href="#" title="Instagram">
+            <a href="#instagram" title="Instagram">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-instagram"
@@ -774,7 +774,7 @@
             </a>
           </li>
           <li>
-            <a href="#" title="YouTube">
+            <a href="#youtube" title="YouTube">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-youtube"
@@ -795,7 +795,7 @@
             </a>
           </li>
           <li>
-            <a href="#" title="Tik Tok">
+            <a href="#tiktok" title="Tik Tok">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon icon-tabler icon-tabler-brand-tiktok"
@@ -822,7 +822,7 @@
           <p>Copyright 2022</p>
           <p>Taco Cheesington</p>
         </div>
-        <img src="images/taco-cheesington.png" alt="">
+        <img src="images/taco-cheesington.png" alt="a chef preparing food on a plate">
       </section>
     </footer>
   </body>
