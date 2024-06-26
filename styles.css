@@ -15,19 +15,13 @@
   box-sizing: border-box;
 }
 
-html {
-  width: 100%;
-  background-color: var(--light-blue);
-}
-
 body {
-	display: grid;
+  display: grid;
 	grid-template-rows: minmax(0, min-content) minmax(0, 1fr) minmax(0,min-content);
 	font-family: var(--Bebas);
-	width: 100%;
 	max-width: 414px;
 	margin: 0 auto;
-	background-color: var(--off-white);
+  background-color: var(--light-blue);
 }
 main {
   background-color: var(--off-white);
@@ -61,7 +55,6 @@ nav,
 input {
   font-family: var(--Montserrat);
   font-size: 16px;
-  font-weight: 400;
 }
 
 dt {
@@ -79,11 +72,10 @@ dt {
 menu {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, auto);
   padding: 0;
   height: 75px;
   align-items: center;
-  justify-items: center;
 }
 
 .menu-item a {
@@ -93,14 +85,12 @@ menu {
   align-items: center;
   color: var(--orange);
   font-weight: bold;
-  text-transform: uppercase;
   text-decoration: none;
   min-width: 100px;
 }
 
 .menu-item a:hover {
   border-bottom: 3px solid var(--orange);
-  margin: -1px;
 }
 
 .recipeImg {
@@ -208,11 +198,11 @@ menu {
 
 .star-ratings {
   grid-area: stars;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 }
 
-.star-ratings svg {
-  margin: 0 3px;
-}
 .star-filled {
   fill: var(--orange);
 }
@@ -442,7 +432,6 @@ footer img {
     background-color: rgba(255, 255, 255, 0.7);
     z-index: 3;
     position: relative;
-    justify-items: center;
   }
 
   .menu-item a:hover {
@@ -627,18 +616,18 @@ footer img {
   }
 
   .side-dish {
-    gap: 1em;
+    gap: 1em 0.5em;
     grid-template-areas: 
       "img img"
       "title title"
       "info info"
       "rating stars";
     grid-template-columns: minmax(0, min-content) minmax(0, 1fr);
+    grid-template-rows: min-content min-content auto min-content;
   }
 
   #side-dishes-section h3, 
   .side-dish-info {
-    margin: 10px;
     grid-column: 1/-1;
   }
 
@@ -649,7 +638,6 @@ footer img {
 
   .star-ratings {
     white-space: nowrap;
-    margin-left: -1em;
   }
 
 	header {
@@ -672,7 +660,7 @@ footer img {
     flex-direction: row;
 		align-items: center;
   }
-  
+
   .home-btn {
     padding-right: 10%;
   }
